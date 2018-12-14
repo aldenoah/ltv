@@ -1,0 +1,217 @@
+@import "components/modal.css";
+@import "components/videoWrapper.css";
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre {
+  margin: 0 0 1rem 0;
+}
+
+body {
+  @apply
+  .leading-normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.cover--poster {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ), url("/images/kill-me-heal-me.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+
+.coverWrapper {
+  @apply
+  .relative;
+  padding-top: 56.25%;
+}
+
+@screen md {
+  .coverWrapper {
+    padding-top: 56.25%;
+  }
+}
+
+@screen lg {
+  .coverWrapper {
+    padding-top: 56.25%;
+  }
+}
+
+.cover {
+  @apply
+  .absolute
+  .pin-t
+  .pin-r
+  .pin-b
+  .pin-l
+  .w-full
+  .bg-cover;
+}
+
+.cover--video1 {
+  background-image: url("/images/lindayg.jpg");
+  background-position-y: 80%;
+}
+
+.cover--video2 {
+  background-image: url("/images/lindayg2.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video3 {
+  background-image: url("/images/lindayg3.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video4 {
+  background-image: url("/images/lindayg4.jpg");
+  background-position-y: 25%;
+}
+
+.cover--video5 {
+  background-image: url("/images/lindayg5.jpg");
+  background-position-y: 25%;
+}
+
+.cover--video6 {
+  background-image: url("/images/lindayg6.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video7 {
+  background-image: url("/images/lindayg7.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video8 {
+  background-image: url("/images/lindayg8.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video9 {
+  background-image: url("/images/lindayg9.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video10 {
+  background-image: url("/images/lindayg10.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video11 {
+  background-image: url("/images/lindayg11.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video12 {
+  background-image: url("/images/lindayg12.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video13 {
+  background-image: url("/images/lindayg13.jpg");
+  background-position-y: 50%;
+}
+
+.cover--video14 {
+  background-image: url("/images/lindayg14.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video15 {
+  background-image: url("/images/lindayg15.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video16 {
+  background-image: url("/images/lindayg16.jpg");
+  background-position-y: 40%;
+}
+
+.cover--video17 {
+  background-image: url("/images/lindayg17.jpg");
+  background-position-y: 50%;
+}
+
+.cover--video18 {
+  background-image: url("/images/lindayg18.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video19 {
+  background-image: url("/images/lindayg19.jpg");
+  background-position-y: 70%;
+}
+
+.cover--video20 {
+  background-image: url("/images/lindayg20.jpg");
+  background-position-y: 70%;
+}
